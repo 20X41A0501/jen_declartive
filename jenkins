@@ -10,7 +10,7 @@ pipeline
     }
     stage('Compilation') {
      steps {
-        echo'I am compile the program')
+        echo 'I am compile the program'
       }
      }
      stage('Installation') {
