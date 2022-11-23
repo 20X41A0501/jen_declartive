@@ -1,0 +1,27 @@
+pipeline
+{
+ agent any
+ stages {
+   stage('check validation') {
+   step {
+     echo ('I am validating program')
+     }
+    }
+    stage('compilation') {
+     step {
+        echo('I am compile the program')
+      }
+     }
+     stage('install') {
+         step {
+            echo('I am install the package')
+          }
+       }
+       stage('depoly') {
+         step {
+            echo('I am depoly  the program')
+          }
+       }
+    }
+ }
+       
